@@ -1,0 +1,15 @@
+{
+  "functions": {
+    "predeploy": []
+  },
+  "hosting": {
+    "public": "./client/build",
+    "rewrites": [
+      {
+        "source": "/api/items",
+        "function": "app"
+      }
+    ],
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  }
+}
